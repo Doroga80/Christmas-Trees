@@ -1,0 +1,9 @@
+.logo {
+    font-weight: 700;
+    line-height: 110%; /* 22px */
+    color: var(--main-bg-color);
+}
+
+.logo__second {
+    color: var(--main-color);
+}
