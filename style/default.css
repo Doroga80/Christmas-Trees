@@ -7,15 +7,8 @@
     font-display: swap;
 }
 
-:root {
-    --main-color: #fff;
-    --second-color: #262626;
-    --one-color: #005844;
-    --two-color: #006F55;
-    --three-color: #00654E;
-    --main-bg-color: #00654E;
-    --second-bg-color: #C0B487;
-    --trigger-color: #E5AB39;
+
+html {
     box-sizing: border-box;
 }
 
@@ -45,12 +38,17 @@ h1,h2 {
 }
 
 .container {
-    max-width: 1290px;
+    max-width: 1390px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 .hide {
     display: none;
+}
+
+h1, h2, h3, p {
+    margin: 0;
 }
 
 ul {
@@ -70,4 +68,32 @@ button, title {
 
 button {
     cursor: pointer;
+}
+/* форма для людей с ограничениями */
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+@media (max-widht: 1440px) {
+    .container {
+        padding: 0 42px;
+    }
+}
+@media (max-widht: 1000px) {
+    .container {
+        padding: 0 39px;
+    }
+}
+@media (max-widht: 580px) {
+    .container {
+        padding: 0 10px;
+    }
 }
